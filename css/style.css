@@ -1,0 +1,157 @@
+/*Chamada das fontes do site*/
+@charset "UTF-8";
+
+@font-face {
+  font-family: "AktivGroteskExTrial-Light";
+  src: url("../fonts/AktivGroteskExTrial-Light.eot");
+  src: url("../fonts/AktivGroteskExTrial-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskExTrial-Light.woff") format("woff"), url("../fonts/AktivGroteskExTrial-Light.woff2") format("woff2"), url("../fonts/AktivGroteskExTrial-Light.ttf") format("truetype"), url("../fonts/AktivGroteskExTrial-Light.svg#AktivGroteskExTrial-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AktivGroteskExTrial-Bold";
+  src: url("../fonts/AktivGroteskExTrial-Bold.eot");
+  src: url("../fonts/AktivGroteskExTrial-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskExTrial-Bold.woff") format("woff"), url("../fonts/AktivGroteskExTrial-Bold.woff2") format("woff2"), url("../fonts/AktivGroteskExTrial-Bold.ttf") format("truetype"), url("../fonts/AktivGroteskExTrial-Bold.svg#AktivGroteskExTrial-Bold") format("svg");
+}
+
+@font-face {
+  font-family: "AvenirNext-Bold";
+  src: url("../fonts/avenir-next-bold.eot");
+  src: url("../fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir-next-bold.woff") format("woff"), url("../fonts/AktivGroteskExTrial-Bold.woff2") format("woff2"), url("../fonts/avenir-next-bold.ttf") format("truetype"), url("../fonts/avenir-next-bold.svg#AvenirNext-Bold") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-italic-light";
+  src: url("../fonts/open-sans-v15-latin-300italic.eot");
+  src: url("../fonts/open-sans-v15-latin-300italic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v15-latin-300italic.woff") format("woff"), url("../fonts/open-sans-v15-latin-300italic.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-300italic.ttf") format("truetype"), url("../fonts/open-sans-v15-latin-300italic.svg#OpenSans-italic-light") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-light";
+  src: url("../fonts/open-sans-v15-latin-300.eot");
+  src: url("../fonts/open-sans-v15-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v15-latin-300.woff") format("woff"), url("../fonts/open-sans-v15-latin-300.woff2") format("woff2"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/open-sans-v15-latin-300.svg#OpenSans-light") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-600";
+  src: url("../fonts/open-sans-v15-latin-600.eot");
+  src: url("../fonts/open-sans-v15-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v15-latin-600.woff") format("woff"), url("../fonts/open-sans-v15-latin-600.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.ttf") format("truetype"), url("../fonts/open-sans-v15-latin-600.svg#OpenSans-600") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-700";
+  src: url("../fonts/open-sans-v15-latin-700.eot");
+  src: url("../fonts/open-sans-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v15-latin-700.woff") format("woff"), url("../fonts/open-sans-v15-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v15-latin-700.svg#OpenSans-700") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-800";
+  src: url("../fonts/open-sans-v15-latin-800.eot");
+  src: url("../fonts/open-sans-v15-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v15-latin-800.woff") format("woff"), url("../fonts/open-sans-v15-latin-800.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-800.ttf") format("truetype"), url("../fonts/open-sans-v15-latin-800.svg#OpenSans-800") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/open-sans-v15-latin-regular.eot");
+  src: url("../fonts/open-sans-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v15-latin-regular.woff") format("woff"), url("../fonts/open-sans-v15-latin-regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/open-sans-v15-latin-regular.svg#OpenSans-Regular") format("svg");
+}
+
+/*Animações da pagina*/
+@keyframes slidein-left {
+  0% {
+    opacity: 0;
+    transform: scale(0.7); 
+    transform: translateX(-2rem); 
+  }
+
+  50% {
+    opacity: .5;
+  }
+  100%{
+  	opacity: 1;
+  } 
+}
+/*Inicio do layout*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body, html {
+  height: 100vh;
+}
+
+body{
+	background-color: #e1dcd5;
+	font-family: "AktivGroteskExTrial-Light";
+  background: url(../imagens/nossas-marcas-11.jpg) no-repeat center center fixed;
+	background-size: cover;
+ }
+header{
+	background-color: rgba(248, 249, 250, 0.08);
+    box-shadow: 0px 1px 3px rgba(255,255,255,.5);
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.text-hinode{
+	color: #ab8232;
+}
+#logo{
+	width: 150px;
+}
+
+.card-header{
+	background-color: transparent;
+	border: none !important;
+	padding-bottom: 0px;
+}
+.card-header h5{
+	text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+.text-temp h5{
+	font-size: 1.5rem;
+	text-shadow: 3px 2px 2px rbga(0,0,0,.5);
+}
+.titulo-1{
+	font-size: 2.9rem !important;
+	text-shadow: 3px 2px 2px rgba(0,0,0,.5);
+	text-transform: uppercase;
+}
+.titulo-2{
+	font-size: 1.5rem !important;
+	text-shadow: 3px 2px 2px rgba(0,0,0,.5);
+}
+.slide-left{
+	animation-duration: 1s;
+  animation-name: slidein-left;
+}
+.form-control{
+    -webkit-box-shadow: 0px 1px 4px 0px #adadad;
+    box-shadow: 0 1px 4px 0px #ADADAD;
+    outline: none;
+    border: 0;
+    border-radius: 0px !important;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 10px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    color: #000;
+}
+.form-control:focus, .form-control:active{
+	box-shadow: 0 1px 4px 0px #ADADAD !important;
+	outline-width: 0px;
+	outline: none;
+  border: 0;
+  border-radius: 0px !important;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  border: 1px solid #fff;
+}
+.card-transparent{
+	background-color: rgba(255, 255, 255, 0);
+}
